@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOST ARTS</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="images/logo.jpg"class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Others</a></li>
+            </ul>
+        </header>
+        <div class="content">
+        <div class="textbox">
+            <h2>Fill your cart<br><span>With Art!!</span></h2>
+            <p>
+                <p1>Our lives and homes deserve to be enchanting and meaningful.</p1><br>
+                Immerse yourself in new limited addition art ,sourced from independent artists.
+            </p>
+            <a href="#">View All Arts</a> 
+        </div>
+    </div>
+        <div class = "imgBox">
+            <img src="images/5.jpg"class="art">
+        </div>
+       
+        <ul class="thumb">
+            <li><img src="images/10.jpg"onclick="imgSlider('images/10.jpg'); changeBgColor('#a4c7fd')"></li>
+            <li><img src="images/7.jpg"onclick="imgSlider('images/7.jpg'); changeBgColor('pink')"></li>
+            <li><img src="images/8.jpg"onclick="imgSlider('images/8.jpg'); changeBgColor('#abf7b1')"></li>
+
+        </ul>
+   
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.art').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html>
